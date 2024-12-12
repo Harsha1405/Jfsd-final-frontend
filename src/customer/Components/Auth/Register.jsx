@@ -127,7 +127,7 @@ export default function RegisterUserForm({ handleNext }) {
                 label="Role"
                 name="role"
               >
-                <MenuItem value={"ROLE_ADMIN"}>Admin</MenuItem>
+               
                 <MenuItem value={"ROLE_CUSTOMER"}>Customer</MenuItem>
               </Select>
               {errors.role && <p style={{ color: 'red', margin: 0, fontSize: '0.75rem' }}>{errors.role}</p>}
