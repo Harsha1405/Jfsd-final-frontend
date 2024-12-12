@@ -48,7 +48,7 @@ export default function RegisterUserForm({ handleNext }) {
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) newErrors.email = "Invalid email format";
 
     if (!data.password) newErrors.password = "Password is required";
-    else if (data.password.length < 6) newErrors.password = "Password must be at least 6 characters";
+    else if (data.password.length < 5) newErrors.password = "Password must be at least 5 characters";
 
     if (!data.role) newErrors.role = "Role is required";
 
